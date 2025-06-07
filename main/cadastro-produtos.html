@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Produto | HSSTORE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Urbanist:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">HSSTORE</a></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="contas.html">Contas</a></li>
+                <li><a href="giftcards.html">Gift Cards</a></li>
+                <li><a href="login.html" id="loginLink">Login</a></li>
+                <li><a href="cadastro-produtos.html" class="active nav-protected" id="cadastroProdutoNav">Cadastrar Produto</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobileMenu">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Cadastrar Produto</h1>
+            <p>Adicione uma nova conta ou gift card para venda. (Apenas para usuários logados)</p>
+        </section>
+        <section class="cadastro-produto-section">
+            <form id="cadastroProdutoForm" class="cadastro-produto-form">
+                <label for="tipoProduto">Tipo de Produto</label>
+                <select id="tipoProduto" name="tipoProduto" required>
+                    <option value="">Selecione</option>
+                    <option value="conta">Conta</option>
+                    <option value="giftcard">Gift Card</option>
+                </select>
+                <label for="plataformaProduto">Plataforma</label>
+                <select id="plataformaProduto" name="plataformaProduto" required>
+                    <option value="">Selecione</option>
+                    <option value="psn">PSN</option>
+                    <option value="xbox">Xbox</option>
+                    <option value="steam">Steam</option>
+                    <option value="googleplay">Google Play</option>
+                    <option value="apple">Apple</option>
+                    <option value="outras">Outras</option>
+                </select>
+                <label for="tituloProduto">Título</label>
+                <input type="text" id="tituloProduto" name="tituloProduto" required placeholder="Ex: Conta PSN com FIFA 24">
+                <label for="descricaoProduto">Descrição</label>
+                <textarea id="descricaoProduto" name="descricaoProduto" required placeholder="Detalhes do produto..."></textarea>
+                <label for="precoProduto">Preço (R$)</label>
+                <input type="number" id="precoProduto" name="precoProduto" min="1" step="0.01" required>
+                <label for="imagemProduto">URL da Imagem</label>
+                <input type="url" id="imagemProduto" name="imagemProduto" placeholder="https://">
+                <button type="submit" class="btn-primary">Cadastrar</button>
+            </form>
+            <div id="cadastroProdutoMsg" class="hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">HSSTORE</div>
+            <div class="footer-links">
+                <a href="https://instagram.com/" target="_blank"><img src="assets/instagram.svg" alt="Instagram"></a>
+                <a href="https://discord.com/" target="_blank"><img src="assets/discord.svg" alt="Discord"></a>
+                <a href="mailto:suporte@hsstore.com"><img src="assets/email.svg" alt="Email"></a>
+            </div>
+            <div class="footer-support">
+                <p>Suporte: <a href="mailto:suporte@hsstore.com">suporte@hsstore.com</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

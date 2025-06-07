@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Cards | HSSTORE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Urbanist:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">HSSTORE</a></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="contas.html">Contas</a></li>
+                <li><a href="giftcards.html" class="active">Gift Cards</a></li>
+                <li><a href="login.html" id="loginLink">Login</a></li>
+                <li><a href="cadastro-produtos.html" id="cadastroProdutoNav" class="nav-protected">Cadastrar Produto</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobileMenu">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Gift Cards</h1>
+            <p>Encontre o gift card ideal para presentear ou turbinar sua conta!</p>
+        </section>
+
+        <section class="giftcard-filtros">
+            <form id="filtroGiftcards">
+                <select name="plataforma" id="plataformaGift">
+                    <option value="">Plataforma</option>
+                    <option value="psn">PSN</option>
+                    <option value="xbox">Xbox</option>
+                    <option value="steam">Steam</option>
+                    <option value="googleplay">Google Play</option>
+                    <option value="apple">Apple</option>
+                </select>
+                <button type="submit" class="btn-primary">Filtrar</button>
+            </form>
+        </section>
+
+        <section class="giftcards-listagem" id="giftcardsListagem">
+            <!-- Cards de gift cards são renderizados via JS -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">HSSTORE</div>
+            <div class="footer-links">
+                <a href="https://instagram.com/" target="_blank"><img src="assets/instagram.svg" alt="Instagram"></a>
+                <a href="https://discord.com/" target="_blank"><img src="assets/discord.svg" alt="Discord"></a>
+                <a href="mailto:suporte@hsstore.com"><img src="assets/email.svg" alt="Email"></a>
+            </div>
+            <div class="footer-support">
+                <p>Suporte: <a href="mailto:suporte@hsstore.com">suporte@hsstore.com</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | HSSTORE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Urbanist:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">HSSTORE</a></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="contas.html">Contas</a></li>
+                <li><a href="giftcards.html">Gift Cards</a></li>
+                <li><a href="login.html" class="active" id="loginLink">Login</a></li>
+                <li><a href="cadastro-produtos.html" id="cadastroProdutoNav" class="nav-protected">Cadastrar Produto</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobileMenu">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <div class="form-container" id="loginContainer">
+                <h2>Entrar</h2>
+                <form id="loginForm">
+                    <input type="email" id="loginEmail" placeholder="E-mail" required>
+                    <input type="password" id="loginPassword" placeholder="Senha" required>
+                    <button type="submit" class="btn-primary">Entrar</button>
+                </form>
+                <p>Não tem conta? <a href="#" id="showRegister">Cadastre-se</a></p>
+            </div>
+            <div class="form-container hidden" id="registerContainer">
+                <h2>Criar Conta</h2>
+                <form id="registerForm">
+                    <input type="text" id="registerName" placeholder="Nome completo" required>
+                    <input type="email" id="registerEmail" placeholder="E-mail" required>
+                    <input type="password" id="registerPassword" placeholder="Senha" required minlength="6">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="isTrader">
+                        Quero ser HSTrader (revendedor)
+                    </label>
+                    <button type="submit" class="btn-primary">Cadastrar</button>
+                </form>
+                <p>Já tem conta? <a href="#" id="showLogin">Entrar</a></p>
+            </div>
+            <div class="login-image">
+                <img src="assets/login-banner.svg" alt="Login Banner">
+            </div>
+        </section>
+        <section class="trader-section-login">
+            <h2>Por que virar <span class="hs-trader">HSTrader</span>?</h2>
+            <ul>
+                <li>💸 Menos taxas</li>
+                <li>📊 Painel exclusivo de produtos</li>
+                <li>🛠️ Suporte prioritário</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">HSSTORE</div>
+            <div class="footer-links">
+                <a href="https://instagram.com/" target="_blank"><img src="assets/instagram.svg" alt="Instagram"></a>
+                <a href="https://discord.com/" target="_blank"><img src="assets/discord.svg" alt="Discord"></a>
+                <a href="mailto:suporte@hsstore.com"><img src="assets/email.svg" alt="Email"></a>
+            </div>
+            <div class="footer-support">
+                <p>Suporte: <a href="mailto:suporte@hsstore.com">suporte@hsstore.com</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
